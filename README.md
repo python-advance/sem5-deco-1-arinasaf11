@@ -14,7 +14,6 @@ from xml.etree import ElementTree as ET # ET чтобы оборачивать �
 
 def logger(function):
     import functools
-    import datetime
     @functools.wraps(function) #functools.wraps - функция, реализующая логику копирования внутренних атрибутов оборачиваемой функции.
     def wrapper(summa):
         result = function(summa)

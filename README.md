@@ -11,3 +11,29 @@
 # Вариативная самостоятельная работа
 
 2.3 Разработка функции-декоратора, вычисляющей время выполнения декорируемой функции.
+
+```python
+def time_decorator(func):
+    """
+    Декоратор, выводящий время, которое заняло
+    выполнение декорируемой функции.
+    """
+    import time
+    def wrapper(*args, **kwargs):
+        t = time.time() #время перед выполнением декорируемой ф-и
+        res = func(*args, **kwargs)
+        print("Время выполнения: ", time.time() - t)       
+        return res
+    return wrapper
+
+@time_decorator
+def plus(x, y):
+    print("%d + %d = %d" % (x, y, x + y))
+    return x + y
+
+plus(2, 3)
+```
+
+Результат:
+
+![результат](https://github.com/python-advance/sem5-deco-1-arinasaf11/blob/master/VSR/time_deco.jpg?raw=true)

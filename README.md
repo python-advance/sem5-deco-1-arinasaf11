@@ -99,6 +99,10 @@ print (summa, convert_from, " = ", result, convert_to)
 
 ![рез](https://github.com/python-advance/sem5-deco-1-arinasaf11/blob/master/ISR/cur_calc.jpg?raw=true)
 
+Запись в файл:
+
+![](https://github.com/python-advance/sem5-deco-1-arinasaf11/blob/master/ISR/record.jpg?raw=true)
+
 # Вариативная самостоятельная работа
 
 2.3 Разработка функции-декоратора, вычисляющей время выполнения декорируемой функции.

@@ -71,23 +71,23 @@ def convert(summa):
 
   elif convert_from == "euro":  
     if convert_to == "rubl":
-      result = float (in_currency) * rub2
+      result = float (summa) * rub2
     elif convert_to == "dollar":
-      result = (float (in_currency) * rub2) / rub1
+      result = (float (summa) * rub2) / rub1
     elif convert_to == "euro":
-      result = float (in_currency)
+      result = float (summa)
     elif convert_to == "iena":
-      result = (float (in_currency) * rub2) / rub3
+      result = (float (summa) * rub2) / rub3
 
   elif convert_from == "iena":  
     if convert_to == "rubl":
-      result = float (in_currency) * rub3
+      result = float (summa) * rub3
     elif convert_to == "dollar":
-      result = (float (in_currency) * rub3) / rub1
+      result = (float (summa) * rub3) / rub1
     elif convert_to == "euro":
-      result = (float (in_currency) * rub3) / rub2
+      result = (float (summa) * rub3) / rub2
     elif convert_to == "iena":
-      result = float (in_currency)     
+      result = float (summa)     
   return result
 
 result = convert(summa)
